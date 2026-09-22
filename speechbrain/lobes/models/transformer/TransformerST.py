@@ -435,7 +435,7 @@ class TransformerST(TransformerASR):
         tgt_mask = get_lookahead_mask(tgt)
 
         return src_key_padding_mask, tgt_key_padding_mask, src_mask, tgt_mask
-    
+
     def make_masks_for_asr(self, src, tgt, wav_len, pad_idx=0):
         """This method generates the masks for training the transformer model.
 
